@@ -63,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements BookCallback {
         mdata.add(new Book(R.drawable.nondesigner));
         mdata.add(new Book(R.drawable.thefault));
         mdata.add(new Book(R.drawable.themessy));
+        mdata.add(new Book(R.drawable.his_dark_material));
+        mdata.add(new Book(R.drawable.little_women));
+        mdata.add(new Book(R.drawable.moby_dick));
 
 
 

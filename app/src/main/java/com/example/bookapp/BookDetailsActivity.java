@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.bookapp.model.Book;
+import com.github.barteksc.pdfviewer.PDFView;
 
 public class BookDetailsActivity extends AppCompatActivity {
 
@@ -34,6 +35,9 @@ public class BookDetailsActivity extends AppCompatActivity {
         Book item = (Book) getIntent().getExtras().getSerializable("bookObject");
 
         loadBookData(item);
+
+
+
 
 
     }

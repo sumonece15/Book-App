@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#0C9F49"
     tools:context=".BookDetailsActivity">
 
 
@@ -40,6 +42,7 @@
         android:layout_marginTop="16dp"
         android:text="An American Marriage"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/item_book_img"
         app:layout_constraintTop_toTopOf="@+id/item_book_img" />
 
@@ -52,6 +55,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:text="By Tayari Jones"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/item_book_img"
         app:layout_constraintTop_toBottomOf="@+id/item_book_title" />
 
@@ -63,6 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="3"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#EE0014"
         app:layout_constraintStart_toEndOf="@+id/item_book_img"
         app:layout_constraintTop_toBottomOf="@+id/container" />
 
@@ -73,7 +82,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:text="score"
+        android:text="Score"
+        android:textColor="#FFD600"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/item_book_ratingbar"
         app:layout_constraintStart_toEndOf="@+id/item_book_ratingbar"
         app:layout_constraintTop_toTopOf="@+id/item_book_ratingbar" />
@@ -102,6 +114,8 @@
         android:src="@drawable/ic_baseline_favorite_24"
         app:tint="@color/fav_icon_tint" />
 
+
+
     <TextView
         android:id="@+id/details_desc"
         android:layout_width="0dp"
@@ -113,6 +127,8 @@
         android:layout_marginRight="32dp"
         android:lineSpacingExtra="8sp"
         android:text="@string/lorem_text"
+        android:textColor="@color/white"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_book_img" />
