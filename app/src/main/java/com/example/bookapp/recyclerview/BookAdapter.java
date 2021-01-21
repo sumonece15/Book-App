@@ -65,7 +65,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.bookviewholder
     public class bookviewholder extends RecyclerView.ViewHolder {
 
 
-        ImageView imgBook,imgFav,imgContainer;
+        ImageView imgBook,imgContainer;
         TextView title,author,pages,rate;
         RatingBar ratingBar;
 

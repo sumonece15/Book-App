@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:background="#0C9F49"
+    android:padding="5dp"
+    android:background="#FFD600"
     tools:context=".BookDetailsActivity">
+
+
 
 
     <ImageView
         android:transitionName="containerTN"
         android:id="@+id/container"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:background="@drawable/container_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:transitionName="bookTN"
         android:id="@+id/item_book_img"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp"
         android:scaleType="centerCrop"
+        android:transitionName="bookTN"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/book1" />
@@ -39,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="7dp"
         android:text="An American Marriage"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -53,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="By Tayari Jones"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/item_book_img"
@@ -70,10 +72,10 @@
         android:numStars="5"
         android:stepSize="1"
         android:rating="3"
-        android:progressBackgroundTint="@color/white"
-        android:progressTint="#EE0014"
+        android:progressBackgroundTint="#FFD600"
+        android:progressTint="#D50000"
         app:layout_constraintStart_toEndOf="@+id/item_book_img"
-        app:layout_constraintTop_toBottomOf="@+id/container" />
+        app:layout_constraintTop_toBottomOf="@+id/item_book_author" />
 
     <TextView
         android:transitionName="scoreTN"
@@ -82,10 +84,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:text="Score"
-        android:textColor="#FFD600"
-        android:textSize="20dp"
+        android:text="score"
         android:textStyle="bold"
+        android:textColor="#D50000"
         app:layout_constraintBottom_toBottomOf="@+id/item_book_ratingbar"
         app:layout_constraintStart_toEndOf="@+id/item_book_ratingbar"
         app:layout_constraintTop_toTopOf="@+id/item_book_ratingbar" />
@@ -97,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="225 pages | 23 review"
         app:layout_constraintStart_toEndOf="@+id/item_book_img"
         app:layout_constraintTop_toBottomOf="@+id/item_book_author" />
@@ -112,25 +113,44 @@
         app:layout_constraintEnd_toEndOf="@+id/container"
         app:layout_constraintTop_toTopOf="@+id/container"
         android:src="@drawable/ic_baseline_favorite_24"
-        app:tint="@color/fav_icon_tint" />
+        app:tint="#FFD600" />
+
+    <!--
+
+        <TextView
+            android:id="@+id/details_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/an_american_marriage_text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_book_img" />
+
+        -->
 
 
-
-    <TextView
-        android:id="@+id/details_desc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
         android:lineSpacingExtra="8sp"
-        android:text="@string/lorem_text"
-        android:textColor="@color/white"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item_book_img" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_book_img"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

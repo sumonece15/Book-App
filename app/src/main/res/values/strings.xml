@@ -1,11 +1,23 @@
 <resources>
     <string name="app_name">Book App</string>
 
-    <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="an_american_marriage_text">An American Marriage is a novel by the American author Tayari Jones.
+It is her fourth novel and was published by Algonquin Books on February 6, 2018. In February 2018,
+the novel was chosen for Oprah Book Club 2.0. The novel also won the 2019 Women Prize for Fiction.\n\n
 
+    For the first few years Roy and Celestial keep an active correspondence,
+though Roy grows frustrated as Celestial career as an artist begins to take off and
+the gaps between their letters and visits grows longer.
+During this period Roy discovers that his cellmate Walter is actually his biological father and
+shares the news with Celestial.
+Also during this time, Roy learns that his mother Olive has died.
+After three years Celestial tells Roy that she no longer wishes to be his wife,
+causing a rift between them. Roy refuses communication with Celestial for the following two years,
+however when his case is finally overturned on appeal and the local DA decides not to pursue the case,
+he optimistically reaches out to Celestial believing that there is still hope for their marriage as she has never divorced
+
+
+    </string>
 
 
 </resources>
